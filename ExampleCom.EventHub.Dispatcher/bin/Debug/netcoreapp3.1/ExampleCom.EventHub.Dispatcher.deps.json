@@ -1,0 +1,664 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ExampleCom.EventHub.Dispatcher/1.0.0": {
+        "dependencies": {
+          "Confluent.Kafka": "1.7.0",
+          "ExampleCom.EventHub.Consumer": "1.0.0",
+          "ExampleCom.EventHub.POCOs": "1.0.0",
+          "Microsoft.Extensions.Configuration": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0-preview.6.21352.12",
+          "Microsoft.VisualStudio.Threading": "17.0.26-alpha"
+        },
+        "runtime": {
+          "ExampleCom.EventHub.Dispatcher.dll": {}
+        }
+      },
+      "Confluent.Kafka/1.7.0": {
+        "dependencies": {
+          "System.Memory": "4.5.0",
+          "librdkafka.redist": "1.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+            "assemblyVersion": "1.7.0.0",
+            "fileVersion": "1.7.0.0"
+          }
+        }
+      },
+      "librdkafka.redist/1.7.0": {
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/librdkafka.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/alpine-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/centos6-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/centos7-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/librdkafka.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/librdkafka.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/librdkafkacpp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libzstd.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/msvcp120.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "12.0.21005.1"
+          },
+          "runtimes/win-x64/native/msvcr120.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "12.0.21005.1"
+          },
+          "runtimes/win-x64/native/zlib.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.2.8.0"
+          },
+          "runtimes/win-x86/native/librdkafka.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/librdkafkacpp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libzstd.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/msvcp120.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "12.0.21005.1"
+          },
+          "runtimes/win-x86/native/msvcr120.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "12.0.21005.1"
+          },
+          "runtimes/win-x86/native/zlib.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.2.8.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.FileProviders.Physical": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0-preview.6.21352.12",
+          "System.Text.Json": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0-preview.6.21352.12",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0-preview.6.21352.12": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.FileSystemGlobbing": "6.0.0-preview.6.21352.12",
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/6.0.0-preview.6.21352.12": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.VisualStudio.Threading/17.0.26-alpha": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.26-alpha",
+          "Microsoft.VisualStudio.Validation": "16.10.34",
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.Threading.dll": {
+            "assemblyVersion": "17.0.0.0",
+            "fileVersion": "17.0.26.43936"
+          }
+        },
+        "resources": {
+          "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Threading.Analyzers/17.0.26-alpha": {},
+      "Microsoft.VisualStudio.Validation/16.10.34": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll": {
+            "assemblyVersion": "16.10.0.0",
+            "fileVersion": "16.10.34.60837"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Win32.Registry/5.0.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Memory/4.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.6.21352.12": {
+        "runtime": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "System.Text.Json/6.0.0-preview.6.21352.12": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.6.21352.12",
+          "System.Text.Encodings.Web": "6.0.0-preview.6.21352.12"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Text.Json.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.35212"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "ExampleCom.EventHub.Consumer/1.0.0": {
+        "dependencies": {
+          "Confluent.Kafka": "1.7.0",
+          "ExampleCom.EventHub.POCOs": "1.0.0"
+        },
+        "runtime": {
+          "ExampleCom.EventHub.Consumer.dll": {}
+        }
+      },
+      "ExampleCom.EventHub.POCOs/1.0.0": {
+        "runtime": {
+          "ExampleCom.EventHub.POCOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExampleCom.EventHub.Dispatcher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confluent.Kafka/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g7dbCUxJPF3SM5qBrIZso0dw3jgRD6tQ0oDb9Cf1oL5l6U5OxSKC90kN79F1QHx8P2wEPBmiWiIUf9Y5ZPPpQw==",
+      "path": "confluent.kafka/1.7.0",
+      "hashPath": "confluent.kafka.1.7.0.nupkg.sha512"
+    },
+    "librdkafka.redist/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JoR57Zi4lpRj4GdYynXZoantQMoqt8bZ6g3izCgrhe80aUSUeGbAm+cq9xlCINIfX5Wy0oomU4+NGNeHo/4iAA==",
+      "path": "librdkafka.redist/1.7.0",
+      "hashPath": "librdkafka.redist.1.7.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XKp7XOJS7Lk5ELfZdWHVvtl21x8W7rXtByscx4rpr/Uke+6IJDUZeJqKkVHozwmXWTwTQw12LkQHl6tdo3NfTw==",
+      "path": "microsoft.extensions.configuration/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.configuration.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JDRr2WLwTRdd0fUuVU7sg32NsJY+2eu9ysXyFtjbKyf2HTpyMspTCYrdW5sV7ULkK1M74C/2sJ6Mg0+bJIk6HQ==",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.configuration.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sw/ueX7wWIB82ssR6HkssEXmTOtJ3vm957AeVqN6N2p6KsXQr5c99NSmNrYwqEu3VKu5Xtoa1btyuywUaKez3g==",
+      "path": "microsoft.extensions.configuration.fileextensions/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bAX0rD8si3rJKqyHbVbuzv2Di6yWhH/S5nH0KcWSMZDIRvesO5fyMtA34x9+0OiSI/BcT3FQudZxYpxusdmjjA==",
+      "path": "microsoft.extensions.configuration.json/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.configuration.json.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3p6qSEsOISTG2GfFTEyxQv0lHDU78FLuCV1MI31NRMoJ3mLU6mknjciT1QzlOqFURDofVZYx2+pHhp8XSpXxMA==",
+      "path": "microsoft.extensions.dependencyinjection/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.dependencyinjection.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XJnSVApCh1iOY2TXYMu2B6KfILZSUKD7uskoGZVwxMP2XH6/6igSWLU2bi3BqoH8fxHUe58o8QpMKCXoG4SXBg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xTGXvu2X66oozdYzWjPUa8jI8Z90zF0xdKLsyIsJeYmRIgroatDfGlgGW0XHhfDeTYEIjpj+iLyqbbHH17g7Cg==",
+      "path": "microsoft.extensions.fileproviders.abstractions/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c2YIffUCyVjqyv4ZMwoJAPfclK1GLZAESw4TDEIYQsrH2YN+nGkowIWNaJnyDQR0BJvWs3dn1xV8EFY/zxPueQ==",
+      "path": "microsoft.extensions.fileproviders.physical/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.fileproviders.physical.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m3GODI9v7Wutrb3OVwop0ueg3oYsd3VPPQi2MC3YfZCSRCJ3QDQwRcLiodpmzRX7Q1FDzH84aNwHDTMRtHLM8Q==",
+      "path": "microsoft.extensions.filesystemglobbing/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.filesystemglobbing.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1qTXoAscwEW7NIykLt5k8u9E2Lt6a5MTwnL17dkb+cOVBMGKf+aR66slYMlv5XaxlKOdunCj813N8V3mNJVrPQ==",
+      "path": "microsoft.extensions.primitives/6.0.0-preview.6.21352.12",
+      "hashPath": "microsoft.extensions.primitives.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Threading/17.0.26-alpha": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fYumJ0xjtdACUHGoxUXh2C6dTjE1mX6XAX57UG2ons8osuOnmkorXGhKWYVnldIdFQw6X2Bf9XeYc9EST8IL9g==",
+      "path": "microsoft.visualstudio.threading/17.0.26-alpha",
+      "hashPath": "microsoft.visualstudio.threading.17.0.26-alpha.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Threading.Analyzers/17.0.26-alpha": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DaTsk7aD67f3Yo1TmuHDFz7z6/JaTemrYWDAPR82P4D4W2m9FmxYiF6ULzmIZyzpL5jfHoJbzRtJnfq5BhSaug==",
+      "path": "microsoft.visualstudio.threading.analyzers/17.0.26-alpha",
+      "hashPath": "microsoft.visualstudio.threading.analyzers.17.0.26-alpha.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Validation/16.10.34": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1+JFh/sehHRl6+a1gHVJTLpA3n5WbhnULwEUvE0v5Mnwt3tFBmHECbdq9MrwBmrhnHqGKArqtT4HBVvURhnmWA==",
+      "path": "microsoft.visualstudio.validation/16.10.34",
+      "hashPath": "microsoft.visualstudio.validation.16.10.34.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "path": "microsoft.win32.registry/5.0.0",
+      "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0psCSpUxTGfvwyO0i03ajXVhgBqyXlibXz0Mo1dtKGjaHrXFLnuQ8rNBTmWRqbfRjr4eC6Wah4X5FfuFDu5og==",
+      "path": "system.memory/4.5.0",
+      "hashPath": "system.memory.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u7xMHklB0P5p+W/bBC22s2qkbhIT/TH/okmFm9os2Tkn9LlO0hTt5GHSYSRs1xFJTQ/owVAU4+NkwtOBSaadHw==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0-preview.6.21352.12",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "path": "system.security.accesscontrol/5.0.0",
+      "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "path": "system.security.principal.windows/5.0.0",
+      "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aN1k+i7/xXfK3eXEhrHOR9GSFVkYlz3IhtTn5c3JFzCugDiO8HCHQVa6P102q5vo8vaQ76XlbjPRGjdS5TPVwA==",
+      "path": "system.text.encodings.web/6.0.0-preview.6.21352.12",
+      "hashPath": "system.text.encodings.web.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.0-preview.6.21352.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iGEpAWe9MZbolHahyAMyP/chyEsHFlGzHnRRD4MXKrSYrGOzUAZ4hwSJqiiRRSTr/pRp7w3tHy4CBHCFUlfA2w==",
+      "path": "system.text.json/6.0.0-preview.6.21352.12",
+      "hashPath": "system.text.json.6.0.0-preview.6.21352.12.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "ExampleCom.EventHub.Consumer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExampleCom.EventHub.POCOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

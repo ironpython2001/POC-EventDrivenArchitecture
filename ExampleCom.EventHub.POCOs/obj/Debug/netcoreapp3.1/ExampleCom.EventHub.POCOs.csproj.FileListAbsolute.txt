@@ -1,0 +1,9 @@
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\bin\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.deps.json
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\bin\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.dll
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\bin\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.pdb
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.csprojAssemblyReference.cache
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.AssemblyInfoInputs.cache
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.AssemblyInfo.cs
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.csproj.CoreCompileInputs.cache
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.dll
+E:\mygithub\POC-EventDrivenArchitecture\ExampleCom.EventHub.POCOs\obj\Debug\netcoreapp3.1\ExampleCom.EventHub.POCOs.pdb

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "ubD/ZDynAEJuokltzyF6KV9CvlZgyecdQeqk8LrkzW5jPLIvCEQNYU48S/9DPYXZ3WgIVlcnamEnyQBxdCW5qw==",
+  "success": true,
+  "projectFilePath": "E:\\mygithub\\POC-EventDrivenArchitecture\\ExampleCom.EventHub.Producer\\ExampleCom.EventHub.Producer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\confluent.kafka\\1.7.0\\confluent.kafka.1.7.0.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\librdkafka.redist\\1.7.0\\librdkafka.redist.1.7.0.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0-preview.6.21352.12\\microsoft.extensions.configuration.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.configuration.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0-preview.6.21352.12\\microsoft.extensions.configuration.fileextensions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0-preview.6.21352.12\\microsoft.extensions.configuration.json.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0-preview.6.21352.12\\microsoft.extensions.dependencyinjection.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.fileproviders.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0-preview.6.21352.12\\microsoft.extensions.fileproviders.physical.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0-preview.6.21352.12\\microsoft.extensions.filesystemglobbing.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-preview.6.21352.12\\microsoft.extensions.primitives.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.6.21352.12\\system.runtime.compilerservices.unsafe.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\system.text.encodings.web\\6.0.0-preview.6.21352.12\\system.text.encodings.web.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\system.text.json\\6.0.0-preview.6.21352.12\\system.text.json.6.0.0-preview.6.21352.12.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,39 @@
+﻿@model ExampleCom.EventHub.POCOs.Order;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateOrder">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OrderId" class="control-label"></label>
+                <input asp-for="OrderId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <input asp-for="CustomerId" class="form-control" />
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            @for (var i = 0; i < Model.Products.Count(); i++)
+            {
+                <div class="form-group">
+                    <label asp-for="@Model.Products[i].ProductId" class="control-label"></label>
+                    <input asp-for="@Model.Products[i].ProductId" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Products[i].ProductName" class="control-label"></label>
+                    <input asp-for="@Model.Products[i].ProductName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Products[i].Quantity" class="control-label"></label>
+                    <input asp-for="@Model.Products[i].Quantity" class="form-control" />
+                </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

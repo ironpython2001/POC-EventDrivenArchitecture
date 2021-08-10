@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PSK26CRmqObS5bRA7mmTZ0z2k90IQPNGjPKmvSDVr1JRag7Cq/71wRM2thEe+p9+rk8jitT36eGUuZOkeErJaw==",
+  "success": true,
+  "projectFilePath": "E:\\mygithub\\POC-EventDrivenArchitecture\\ExampleCom.EventHub.Consumer\\ExampleCom.EventHub.Consumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\confluent.kafka\\1.7.0\\confluent.kafka.1.7.0.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\librdkafka.redist\\1.7.0\\librdkafka.redist.1.7.0.nupkg.sha512",
+    "C:\\Users\\spottumuttu\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

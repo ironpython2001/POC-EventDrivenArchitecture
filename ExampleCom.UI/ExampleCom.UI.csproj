@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExampleCom.EventHub.POCOs\ExampleCom.EventHub.POCOs.csproj" />
+    <ProjectReference Include="..\ExampleCom.EventHub.Producer\ExampleCom.EventHub.Producer.csproj" />
+  </ItemGroup>
+
+</Project>
